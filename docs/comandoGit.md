@@ -27,6 +27,11 @@ Se `origin` existir, mas apontar para outro endereço, corrija-o:
 git remote set-url origin https://github.com/denysantos/primeiroServidor.git
 ```
 
+Se o Git pedir autenticação, entre na sua conta GitHub pelo VS Code ou use o
+GitHub CLI (`gh auth login`, se instalado). O GitHub não aceita a senha da conta
+para operações Git por HTTPS. Não coloque senhas ou tokens diretamente na URL
+do remoto.
+
 Adicione os arquivos, crie o primeiro commit e envie a branch `main`:
 
 ```bash
